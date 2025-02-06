@@ -22,91 +22,90 @@ h <- read_excel("~/Documents/Experiments/EY60 Aka Nano Shake.xlsx",
 
 ```{r}
 p <- ggplot(h, aes(x=Mins)) + 
-  geom_point(aes(y = A1), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = A2), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = B1), color="steelblue", alpha = 0.5) +
-  geom_point(aes(y = B2), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = A5), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = A6), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = B5), color="steelblue", alpha = 0.5) +
-  geom_point(aes(y = B6), color="steelblue", alpha = 0.5) +
-  geom_point(aes(y = A9), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = A10), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = B9), color="steelblue", alpha = 0.5) +
-  geom_point(aes(y = B10), color="steelblue", alpha = 0.5) 
+  geom_point(aes(y = A1), color="tomato", alpha = 0.5) + 
+  geom_point(aes(y = A2), color="tomato", alpha = 0.5) + 
+  geom_point(aes(y = B1), color="tomato", alpha = 0.5) +
+  geom_point(aes(y = B2), color="tomato", alpha = 0.5) + 
+  geom_point(aes(y = A5), color="orange", alpha = 0.5) + 
+  geom_point(aes(y = A6), color="orange", alpha = 0.5) + 
+  geom_point(aes(y = B5), color="orange", alpha = 0.5) +
+  geom_point(aes(y = B6), color="orange", alpha = 0.5) +
+  geom_point(aes(y = A9), color="lightsalmon", alpha = 0.5) + 
+  geom_point(aes(y = A10), color="lightsalmon", alpha = 0.5) + 
+  geom_point(aes(y = B9), color="lightsalmon", alpha = 0.5) +
+  geom_point(aes(y = B10), color="lightsalmon", alpha = 0.5) 
 
 p<- p +labs(title=" Akaluc 4X ",
-        x ="Time (mins)", y = "Luminescence (AU)")
+        x ="Time (Mins)", y = "Luminescence (AU)")
 p
 #ggsave("4X Lum.png")
  
 p1 <- ggplot(h, aes(x=Mins)) + 
-  
-  geom_point(aes(y = E1), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = E2), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = F1), color="orange", alpha = 0.5) +
-  geom_point(aes(y = F2), color="orange", alpha = 0.5) +
-  geom_point(aes(y = E5), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = E6), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = F5), color="orange", alpha = 0.5) +
-  geom_point(aes(y = F6), color="orange", alpha = 0.5) +
-  geom_point(aes(y = E9), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = E10), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = F9), color="orange", alpha = 0.5) +
-  geom_point(aes(y = F10), color="orange", alpha = 0.5) 
+  geom_point(aes(y = E1), color="blue4", alpha = 0.5) + 
+  geom_point(aes(y = E2), color="blue4", alpha = 0.5) + 
+  geom_point(aes(y = F1), color="blue4", alpha = 0.5) +
+  geom_point(aes(y = F2), color="blue4", alpha = 0.5) +
+  geom_point(aes(y = E5), color="royalblue", alpha = 0.5) + 
+  geom_point(aes(y = E6), color="royalblue", alpha = 0.5) + 
+  geom_point(aes(y = F5), color="royalblue", alpha = 0.5) +
+  geom_point(aes(y = F6), color="royalblue", alpha = 0.5) +
+  geom_point(aes(y = E9), color="steelblue", alpha = 0.5) + 
+  geom_point(aes(y = E10), color="steelblue", alpha = 0.5) + 
+  geom_point(aes(y = F9), color="steelblue", alpha = 0.5) +
+  geom_point(aes(y = F10), color="steelblue", alpha = 0.5) 
 p1<- p1 +labs(title=" Nanoluc 0.8X ",
-        x ="Time (mins)", y = "Luminescence (AU)")
+        x ="Time (Mins)", y = "Luminescence (AU)")
 
 p1
 #ggsave("1X Lum.png")
 
 
 p3 <- ggplot(h, aes(x=Mins)) + 
-  geom_point(aes(y = H10), color="brown", alpha = 0.5) + 
-  geom_point(aes(y = H11), color="brown", alpha = 0.5) + 
-  geom_point(aes(y = H12), color="brown", alpha = 0.5)+
-  geom_point(aes(y = H7), color="black", alpha = 0.5)+
-  geom_point(aes(y = H8), color="black", alpha = 0.5)+
-  geom_point(aes(y = H9), color="black", alpha = 0.5)
+  geom_point(aes(y = H10), color="blue4", alpha = 0.5) + 
+  geom_point(aes(y = H11), color="blue4", alpha = 0.5) + 
+  geom_point(aes(y = H12), color="blue4", alpha = 0.5)+
+  geom_point(aes(y = H7), color="tomato", alpha = 0.5)+
+  geom_point(aes(y = H8), color="tomato", alpha = 0.5)+
+  geom_point(aes(y = H9), color="tomato", alpha = 0.5)
 
 p3<- p3 +labs(title="No Substrate",
-        x ="Time (mins)", y = "Luminescence (AU)")
+        x ="Time (Mins)", y = "Luminescence (AU)")
 p3
 #ggsave("0X Lum.png")
 ```
+
 ```{r}
 q <- ggplot(g, aes(x=Mins)) + 
-  geom_point(aes(y = A1), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = A2), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = B1), color="steelblue", alpha = 0.5) +
-  geom_point(aes(y = B2), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = A5), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = A6), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = B5), color="steelblue", alpha = 0.5) +
-  geom_point(aes(y = B6), color="steelblue", alpha = 0.5) +
-  geom_point(aes(y = A9), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = A10), color="steelblue", alpha = 0.5) + 
-  geom_point(aes(y = B9), color="steelblue", alpha = 0.5) +
-  geom_point(aes(y = B10), color="steelblue", alpha = 0.5) 
+  geom_point(aes(y = A1), color="tomato", alpha = 0.5) + 
+  geom_point(aes(y = A2), color="tomato", alpha = 0.5) + 
+  geom_point(aes(y = B1), color="tomato", alpha = 0.5) +
+  geom_point(aes(y = B2), color="tomato", alpha = 0.5) + 
+  geom_point(aes(y = A5), color="orange", alpha = 0.5) + 
+  geom_point(aes(y = A6), color="orange", alpha = 0.5) + 
+  geom_point(aes(y = B5), color="orange", alpha = 0.5) +
+  geom_point(aes(y = B6), color="orange", alpha = 0.5) +
+  geom_point(aes(y = A9), color="lightsalmon", alpha = 0.5) + 
+  geom_point(aes(y = A10), color="lightsalmon", alpha = 0.5) + 
+  geom_point(aes(y = B9), color="lightsalmon", alpha = 0.5) +
+  geom_point(aes(y = B10), color="lightsalmon", alpha = 0.5) 
 q<- q +labs(title=" Akaluc 4X ",
         x ="Time (Mins)", y = "OD")
 q
 #ggsave("4X OD.png")
  
 q1 <- ggplot(g, aes(x=Mins)) + 
-  
-  geom_point(aes(y = E1), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = E2), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = F1), color="orange", alpha = 0.5) +
-  geom_point(aes(y = F2), color="orange", alpha = 0.5) +
-  geom_point(aes(y = E5), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = E6), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = F5), color="orange", alpha = 0.5) +
-  geom_point(aes(y = F6), color="orange", alpha = 0.5) +
-  geom_point(aes(y = E9), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = E10), color="orange", alpha = 0.5) + 
-  geom_point(aes(y = F9), color="orange", alpha = 0.5) +
-  geom_point(aes(y = F10), color="orange", alpha = 0.5) 
+  geom_point(aes(y = E1), color="blue4", alpha = 0.5) + 
+  geom_point(aes(y = E2), color="blue4", alpha = 0.5) + 
+  geom_point(aes(y = F1), color="blue4", alpha = 0.5) +
+  geom_point(aes(y = F2), color="blue4", alpha = 0.5) +
+  geom_point(aes(y = E5), color="royalblue", alpha = 0.5) + 
+  geom_point(aes(y = E6), color="royalblue", alpha = 0.5) + 
+  geom_point(aes(y = F5), color="royalblue", alpha = 0.5) +
+  geom_point(aes(y = F6), color="royalblue", alpha = 0.5) +
+  geom_point(aes(y = E9), color="steelblue", alpha = 0.5) + 
+  geom_point(aes(y = E10), color="steelblue", alpha = 0.5) + 
+  geom_point(aes(y = F9), color="steelblue", alpha = 0.5) +
+  geom_point(aes(y = F10), color="steelblue", alpha = 0.5) 
 q1<- q1 +labs(title=" Nanoluc 0.8X ",
         x ="Time (Mins)", y = "OD")
 
@@ -114,12 +113,12 @@ q1
 #ggsave("1X OD.png")
 
 q3 <- ggplot(g, aes(x=Mins)) + 
-  geom_point(aes(y = H10), color="brown", alpha = 0.5) + 
-  geom_point(aes(y = H11), color="brown", alpha = 0.5) + 
-  geom_point(aes(y = H12), color="brown", alpha = 0.5)+
-  geom_point(aes(y = H7), color="black", alpha = 0.5)+
-  geom_point(aes(y = H8), color="black", alpha = 0.5)+
-  geom_point(aes(y = H9), color="black", alpha = 0.5)
+  geom_point(aes(y = H10), color="blue4", alpha = 0.5) + 
+  geom_point(aes(y = H11), color="blue4", alpha = 0.5) + 
+  geom_point(aes(y = H12), color="blue4", alpha = 0.5)+
+  geom_point(aes(y = H7), color="tomato", alpha = 0.5)+
+  geom_point(aes(y = H8), color="tomato", alpha = 0.5)+
+  geom_point(aes(y = H9), color="tomato", alpha = 0.5)
 
 q3<- q3 +labs(title="No Substrate",
         x ="Time (Mins)", y = "OD")
@@ -130,54 +129,54 @@ q3
 ```{r}
 
 r<- ggplot()+ 
-  geom_point(data = data.frame(x = g$A1, y = h$A1), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$A2, y = h$A2), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$B1, y = h$B1), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$B2, y = h$B2), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-    geom_point(data = data.frame(x = g$A5, y = h$A5), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$A6, y = h$A6), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$B5, y = h$B5), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$B6, y = h$B6), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$A9, y = h$A9), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$A10, y = h$A10), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$B9, y = h$B9), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$B10, y = h$B10), aes(x = x, y = y), color="steelblue", alpha = 0.5)
-r<- r +labs(title=" Nanoluc OD 1",
+  geom_point(data = data.frame(x = g$A1, y = h$A1), aes(x = x, y = y), color="tomato", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$A2, y = h$A2), aes(x = x, y = y), color="tomato", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$B1, y = h$B1), aes(x = x, y = y), color="tomato", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$B2, y = h$B2), aes(x = x, y = y), color="tomato", alpha = 0.5)+
+    geom_point(data = data.frame(x = g$A5, y = h$A5), aes(x = x, y = y), color="orange", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$A6, y = h$A6), aes(x = x, y = y), color="orange", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$B5, y = h$B5), aes(x = x, y = y), color="orange", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$B6, y = h$B6), aes(x = x, y = y), color="lightsalmon", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$A9, y = h$A9), aes(x = x, y = y), color="lightsalmon", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$A10, y = h$A10), aes(x = x, y = y), color="lightsalmon", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$B9, y = h$B9), aes(x = x, y = y), color="lightsalmon", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$B10, y = h$B10), aes(x = x, y = y), color="lightsalmon", alpha = 0.5)
+r<- r +labs(title=" Akaluc OD vs Lum",
         x ="OD", y = "Luminescence")
 r
-#ggsave("OD1.png")
+#ggsave("Akaluc.png")
 
 
 r1<- ggplot()+
-   geom_point(data = data.frame(x = g$H10, y = h$H10), aes(x = x, y = y), color="brown", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$H11, y = h$H11), aes(x = x, y = y), color="brown", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$H12, y = h$H12), aes(x = x, y = y), color="brown", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$H7, y = h$H7), aes(x = x, y = y), color="black", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$H8, y = h$H8), aes(x = x, y = y), color="black", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$H9, y = h$H9), aes(x = x, y = y), color="black", alpha = 0.5)
+   geom_point(data = data.frame(x = g$H10, y = h$H10), aes(x = x, y = y), color="blue4", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$H11, y = h$H11), aes(x = x, y = y), color="blue4", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$H12, y = h$H12), aes(x = x, y = y), color="blue4", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$H7, y = h$H7), aes(x = x, y = y), color="tomato", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$H8, y = h$H8), aes(x = x, y = y), color="tomato", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$H9, y = h$H9), aes(x = x, y = y), color="tomato", alpha = 0.5)
  
-r1<- r1 +labs(title=" Nanoluc OD 0.1",
+r1<- r1 +labs(title=" No Substrate OD vs Lum",
         x ="OD", y = "Luminescence")
 r1
-#ggsave("OD 0.1.png")
+#ggsave("Nosub.png")
 
 r2<- ggplot()+
-  geom_point(data = data.frame(x = g$E1, y = h$E1), aes(x = x, y = y), color="orange", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$E2, y = h$E2), aes(x = x, y = y), color="orange", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$F1, y = h$F1), aes(x = x, y = y), color="orange", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$F2, y = h$F2), aes(x = x, y = y), color="orange", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$E1, y = h$E1), aes(x = x, y = y), color="blue4", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$E2, y = h$E2), aes(x = x, y = y), color="blue4", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$F1, y = h$F1), aes(x = x, y = y), color="blue4", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$F2, y = h$F2), aes(x = x, y = y), color="blue4", alpha = 0.5)+
    geom_point(data = data.frame(x = g$E5, y = h$E5), aes(x = x, y = y),
-color="orange", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$E6, y = h$E6), aes(x = x, y = y), color="orange", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$F5, y = h$F5), aes(x = x, y = y), color="orange", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$F6, y = h$F6), aes(x = x, y = y), color="orange", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$E9, y = h$E9), aes(x = x, y = y), color="orange", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$E10, y = h$E10), aes(x = x, y = y), color="orange", alpha = 0.5)+
-  geom_point(data = data.frame(x = g$F9, y = h$F9), aes(x = x, y = y), color="orange", alpha = 0.5)+
-   geom_point(data = data.frame(x = g$F10, y = h$F10), aes(x = x, y = y), color="orange", alpha = 0.5)
-r2<- r2 +labs(title=" Nanoluc OD 0.01",
+color="royalblue", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$E6, y = h$E6), aes(x = x, y = y), color="royalblue", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$F5, y = h$F5), aes(x = x, y = y), color="royalblue", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$F6, y = h$F6), aes(x = x, y = y), color="royalblue", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$E9, y = h$E9), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$E10, y = h$E10), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
+  geom_point(data = data.frame(x = g$F9, y = h$F9), aes(x = x, y = y), color="steelblue", alpha = 0.5)+
+   geom_point(data = data.frame(x = g$F10, y = h$F10), aes(x = x, y = y), color="steelblue", alpha = 0.5)
+r2<- r2 +labs(title=" Nanoluc OD vs Lum",
         x ="OD", y = "Luminescence")
 
 r2
-#ggsave("OD 0.01.png")
+#ggsave("Nanoluc.png")
 ```
