@@ -14,9 +14,9 @@ library(reshape2)
 library(gridExtra)
 library(ggplot2)
 
-g <- read_excel("~/Documents/Experiments/EY60 Aka Nano Shake.xlsx", 
+g <- read_excel("~/Documents/Experiments/2.5.25 EY60 Aka Nano Shake.xlsx", 
     sheet = "OD")
-h <- read_excel("~/Documents/Experiments/EY60 Aka Nano Shake.xlsx", 
+h <- read_excel("~/Documents/Experiments/2.5.25 EY60 Aka Nano Shake.xlsx", 
     sheet = "Lum")
 ```
 
